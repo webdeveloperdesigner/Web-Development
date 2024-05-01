@@ -1,7 +1,7 @@
 # Hey! I'm Vivek 👋
 
 ## 🔗 Links
-[Portfolio](your_portfolio_link) | [LinkedIn](www.linkedin.com/in/vivek-51a865303) |
+[Portfolio](https://webdeveloperdesigner.github.io/Web-Development/) | [LinkedIn](https://www.linkedin.com/in/vivek-51a865303/) |
 
 ## Badges
 Add badges from somewhere like: [shields.io](https://shields.io/)
