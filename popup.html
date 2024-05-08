@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/popup.css">
+    <title>Your Website</title>
+</head>
+<body>
+    Your website content goes here
+
+    Popup Notification
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <h2>New Version Available!</h2>
+            <p>A new version of our website is available. <a href="#">Click here to update</a></p>
+        </div>
+    </div>
+
+    <script src="/assets/js/popup.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS Styles */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 400px;
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .popup h2 {
+            font-size: 24px;
+            color: #0074e4;
+            margin-bottom: 10px;
+        }
+
+        .popup p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .popup a {
+            color: #0074e4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #888;
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Website</title>
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <!-- Popup Overlay -->
+    <div id="popup-overlay" class="popup-overlay"></div>
+
+    <!-- Popup Notification -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <h2>New Version Available!</h2>
+            <p>A new version of our website is available. <a href="#" onclick="markPopupAsSeen()">Click here to update</a></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript
+        function openPopup() {
+            // Check if the user has seen the popup before
+            if (!localStorage.getItem('popupSeen')) {
+                document.getElementById("popup").style.display = "block";
+            }
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function markPopupAsSeen() {
+            // Set a flag in local storage to indicate that the user has seen the popup
+            localStorage.setItem('popupSeen', 'true');
+            closePopup(); // Close the popup
+        }
+
+        // Call openPopup() when you want to display the update notification.
+        openPopup();
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Slideshow</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 60%; /* Adjusted width for better display */
+            margin: auto; /* Center the container */
+            padding: 20px;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            margin: 10px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .custom-image img {
+            width: 150px; /* Fixed width for images */
+            height: 150px; /* Fixed height for images */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+
+        .custom-text {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .custom-location,
+        .custom-experience {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .custom-location img,
+        .custom-experience img {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <!-- Repeat the custom slides for each job -->
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://www.naukri.com/hotjobs/images/v3/kpr_mar20.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Field Engineer</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">KPR India Llp</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">5.0</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Permanent Remote</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-1 Yrs</p>
+                </div>
+                <!-- Add other details here -->
+            </div>
+
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4662765.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Purchase Executive</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">Merlinhawk Aerospace</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">4.2</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Bangalore</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-1 Yrs</p>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/1103904.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Design Engineer</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">UNO MINDA</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">4.1</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Delhi/NCR</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-2 Yrs</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4619905.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Electrical Engineer</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">Premas Biotech</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">3.3</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Manesar</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-0 Yrs</p>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4593491.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Trainee RA / Jr.RA / RA</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">Embio Limited</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">3.6</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Mahad,Raigad</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-3 Yrs</p>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4613633.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Diploma Electrical Engineer</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">NR Switch</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">3.9</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Kota</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-2 Yrs</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4600263.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Purchase Officer</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">Hetero Healthcare</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">3.8</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Hyderabad</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-2 Yrs</p>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4604671.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Diploma Engineer Trainee</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">JSK Industries</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">3.6</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Dadra & Nagar</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-2 Yrs</p>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="custom-image">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4883045.gif" alt="Job Image">
+                </div>
+                <p class="chakra-text custom-text">Maintenance Engineer</p>
+                <div class="css-1shv2ab custom-text">
+                    <p class="chakra-text custom-text">Sofcon</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/star-icon.c892ce05.svg" alt="Star Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">4.0</p>
+                </div>
+                <div class="custom-location">
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/location-icon.f29c9d1c.svg" alt="Location Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">Bhavnagar</p>
+                    <img src="https://static.naukimg.com/s/7/0/assets/images/src/widgets/popular-jobs-wdgt/v5/resources/experience-icon.b3552352.svg" alt="Experience Icon" class="chakra-image custom-image">
+                    <p class="chakra-text custom-text">0-2 Yrs</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- Add Pagination
+        <div class="swiper-pagination"></div> -->
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
