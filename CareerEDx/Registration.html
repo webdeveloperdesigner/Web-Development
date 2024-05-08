@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- Add Bootstrap CSS (you can download it or use a CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Add Font Awesome CSS (you can download it or use a CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Your custom CSS -->
+    <style>
+        /* Background gradient */
+        body {
+            background: linear-gradient(to right, #007bff, #17a2b8);
+            color: #fff;
+        }
+
+        .divider:after,
+        .divider:before {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+
+        .h-custom {
+            height: calc(100% - 73px);
+        }
+
+        @media (max-width: 450px) {
+            .h-custom {
+                height: 100%;
+            }
+        }
+
+        /* Add animation to social media buttons */
+        .btn-floating {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-floating:hover {
+            transform: scale(1.1);
+        }
+
+        /* Add animation to "Register" button */
+        .btn-primary.btn-lg {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-primary.btn-lg:hover {
+            background-color: #0056b3;
+            /* Darker background color when hovering */
+            transform: scale(1.05);
+        }
+
+        /* Add animation to "Login" link */
+        .link-danger:hover {
+            text-decoration: underline;
+        }
+
+        /* Style the form container */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style the form labels and placeholders */
+        .form-label,
+        .form-outline input::placeholder {
+            color: #fff;
+        }
+
+        /* Style the form input and button */
+        .form-outline input,
+        .btn-primary.btn-lg {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <img src="./login.webp" class="img-fluid" alt="Sample image">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 form-container">
+                    <form>
+                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                            <p class="lead fw-normal mb-0 me-3">Register with</p> <br>
+
+                            <button type="button" class="btn btn-floating mx-1">
+                                <i class="fab fa-google"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-floating mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-floating mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </button>
+                        </div>
+
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                        </div>
+
+                        <!-- Registration form fields -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="fullName" class="form-control form-control-lg"
+                                placeholder="Full Name" />
+                            <label class="form-label" for="fullName">Full Name</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="email" id="email" class="form-control form-control-lg"
+                                placeholder="Enter a valid email address" />
+                            <label class="form-label" for="email">Email address</label>
+                        </div>
+
+                        <div class="form-outline mb-3">
+                            <input type="password" id="password" class="form-control form-control-lg"
+                                placeholder="Create a password" />
+                            <label class="form-label" for="password">Password</label>
+                        </div>
+
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="button" class="btn btn-primary btn-lg"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a href="./index.html"
+                                    class="link-danger">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+            <!-- Copyright -->
+            <div class="text-white mb-3 mb-md-0">
+                Copyright © 2023 CareerEdX. All rights reserved.
+            </div>
+            <!-- Copyright -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </div>
+    </section>
+
+    <!-- Add Bootstrap JS (you can download it or use a CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
